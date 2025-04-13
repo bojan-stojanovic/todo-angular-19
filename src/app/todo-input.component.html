@@ -1,0 +1,11 @@
+<form class="form" (submit)="submitTodoHandler($event)">
+    <div>
+        <label for="todoInput">Add your todo</label>
+        <input type="text" id="todoInput" class="input" name="todoInput" placeholder="Add your todo" class="input"
+            [(ngModel)]="inputValue" />
+        <button class="button">Add</button>
+    </div>
+    <ng-container *ngIf="isEmpty()">
+        <p class="error">Please add todo</p>
+    </ng-container>
+</form>

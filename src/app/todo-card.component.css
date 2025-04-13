@@ -1,0 +1,32 @@
+.todo-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border: 2px solid #ccc;
+    gap: 1rem;
+    padding: 1rem;
+    transition: all 0.3s;
+
+    &.completed {
+        border-color: #00853e;
+        background-color: rgba(0, 133, 62, 0.35);
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.todo-card__controls {
+    display: grid;
+    gap: 1rem;
+}
+
+.remove {
+    background-color: #c12727;
+    color: #fff;
+}
+
+.toggle {
+    background-color: #00853e;
+    color: #fff;
+}

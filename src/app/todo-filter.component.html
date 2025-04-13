@@ -1,0 +1,15 @@
+<div class="filter-wrapper">
+  <span>Number of todos: {{ todoNumber() }}</span>
+  <div class="filters">
+    <button (click)="updateActiveFilter('all')" [ngClass]="{ active: activeFilter() === 'all' }">
+      All
+    </button>
+    <button (click)="updateActiveFilter('done')" [ngClass]="{ active: activeFilter() === 'done' }">
+      Done
+    </button>
+    <button (click)="updateActiveFilter('open')" [ngClass]="{ active: activeFilter() === 'open' }">
+      Open
+    </button>
+    <span>Active filter {{ activeFilter() }}</span>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="todo-card" [ngClass]="{ completed: completed() }">
+  <p>{{ message() }}</p>
+  <div class="todo-card__controls">
+    <button class="toggle" (click)="onTodoStatus(id())">Mark as done</button>
+    <button class="remove" (click)="onRemoveTodo(id())">Remove</button>
+  </div>
+</div>

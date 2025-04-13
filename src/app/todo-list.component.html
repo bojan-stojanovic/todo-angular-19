@@ -1,0 +1,10 @@
+<div class="todo-list">
+  <app-todo-card
+    *ngFor="let todo of filteredTodos()"
+    [completed]="todo.completed"
+    [id]="todo.id"
+    [message]="todo.message"
+    (removeTodo)="onRemoveTodo(todo.id)"
+    (todoStatus)="onTodoStatusChange(todo.id)"
+  />
+</div>
